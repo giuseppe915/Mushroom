@@ -17,6 +17,7 @@ public class MainActivity extends Activity
 	ImageButton loginButton;
 	ImageButton formButton;
 	ImageButton PlaceholderButton;
+	ImageButton recipeButton;
 	
    public void onCreate(Bundle savedInstanceState)
    {
@@ -53,6 +54,20 @@ public class MainActivity extends Activity
 		loginButton = (ImageButton) findViewById(R.id.LoginButton);
 		
 		loginButton.setOnClickListener(new OnClickListener(){
+
+			
+			public void onClick(View v)
+			{
+				Intent i = new Intent(MainActivity.this,LoginActivity.class);
+				startActivity(i);
+			}
+						
+		});
+		
+		
+		recipeButton = (ImageButton) findViewById(R.id.RecipeButtom);
+		
+		recipeButton.setOnClickListener(new OnClickListener(){
 
 			
 			public void onClick(View v)
