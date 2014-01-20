@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/root"
+    android:background="#000000" >
+    
+    <LinearLayout
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/LoginButton"
+            android:layout_width="147dp"
+            android:layout_height="141dp"
+            android:src="@drawable/login_button" />
+
+    <ImageButton
+        android:id="@+id/RecipeButtom"
+        android:layout_width="147dp"
+        android:layout_height="141dp"
+        android:src="@drawable/ricette" />
+
+	</LinearLayout>
+	
+    <LinearLayout
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+    
+    <ImageButton
+        android:id="@+id/SegnapostiButton"
+        android:layout_width="147dp"
+        android:layout_height="141dp"
+        android:src="@drawable/segnaposti" />
+	
+    <ImageButton
+        android:id="@+id/FormButton"
+        android:layout_width="147dp"
+        android:layout_height="141dp"
+        android:src="@drawable/schede" />
+    </LinearLayout>
+    
+      <LinearLayout
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+     
+     	 <ImageButton
+        android:id="@+id/AndareButton"
+        android:layout_width="147dp"
+        android:layout_height="141dp"
+        android:src="@drawable/andareafunghi" />
+          
+     </LinearLayout>
+
+</LinearLayout>
