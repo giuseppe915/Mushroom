@@ -45,6 +45,7 @@ public final class R {
         public static final int form_activity=0x7f030001;
         public static final int login_activity=0x7f030002;
         public static final int placeholder_activity=0x7f030003;
+        public static final int recipe_activity=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -56,6 +57,7 @@ public final class R {
         public static final int login=0x7f050005;
         public static final int nickname=0x7f050006;
         public static final int pass=0x7f050007;
+        public static final int recipe=0x7f050008;
         public static final int schede_funghi=0x7f050003;
         public static final int segnaposti=0x7f050002;
     }

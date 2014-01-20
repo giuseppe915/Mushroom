@@ -9,4 +9,5 @@
 	<string name="login">Login</string>
 	<string name="nickname">Nickname</string>
 	<string name="pass">Password</string>
+	<string name="recipe">Ricette</string>
 </resources>

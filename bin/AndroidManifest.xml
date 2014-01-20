@@ -33,5 +33,9 @@
             android:name="ingsw.msdetector.LoginActivity"  
             android:label="@string/login">
         </activity>
+         <activity 
+            android:name="ingsw.msdetector.RecipeActivity"  
+            android:label="@string/recipe">
+        </activity>
     </application>
 </manifest>
