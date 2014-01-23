@@ -10,4 +10,7 @@
 	<string name="nickname">Nickname</string>
 	<string name="pass">Password</string>
 	<string name="recipe">Ricette</string>
+	<string name="quiz">Quiz</string>
+	<string name="ricette">Recipe</string>
+	<string name="nuova_ricetta">Nuova ricetta</string>
 </resources>

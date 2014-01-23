@@ -9,13 +9,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/schede_funghi"
-        android:id="@+id/Form"/>"
-    
+        android:id="@+id/Form"
+    	android:layout_gravity="center"
+    	android:layout_marginTop="40sp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Indietro"
-        android:id="@+id/Back"/>
+        android:text="@string/quiz"
+        android:id="@+id/Quiz"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"/>
+    
     
 
 </LinearLayout>

@@ -30,13 +30,15 @@ public final class R {
     }
     public static final class id {
         public static final int AndareButton=0x7f080005;
-        public static final int Back=0x7f080007;
         public static final int Form=0x7f080006;
         public static final int FormButton=0x7f080004;
         public static final int LoginButton=0x7f080001;
+        public static final int NewRecipe=0x7f08000a;
+        public static final int Quiz=0x7f080007;
+        public static final int Recipe=0x7f080009;
         public static final int RecipeButtom=0x7f080002;
         public static final int SegnapostiButton=0x7f080003;
-        public static final int action_settings=0x7f080009;
+        public static final int action_settings=0x7f08000b;
         public static final int azzo=0x7f080008;
         public static final int root=0x7f080000;
     }
@@ -56,8 +58,11 @@ public final class R {
         public static final int bottone_schede1=0x7f050004;
         public static final int login=0x7f050005;
         public static final int nickname=0x7f050006;
+        public static final int nuova_ricetta=0x7f05000b;
         public static final int pass=0x7f050007;
+        public static final int quiz=0x7f050009;
         public static final int recipe=0x7f050008;
+        public static final int ricette=0x7f05000a;
         public static final int schede_funghi=0x7f050003;
         public static final int segnaposti=0x7f050002;
     }
