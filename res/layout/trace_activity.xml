@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FF232E31" >
+    android:background="#FF232E31">
+    
     <Button 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/elenco_segnaposti"
-        android:id="@+id/ElencoSegnaposti"
-        android:layout_marginTop="40sp"/>
-     <Button 
+        android:layout_marginTop="40sp"
+        android:text="@string/nuovo"
+        android:id="@+id/Nuovo"/>
+    <Button 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/segnaposti_mappa"
-        android:id="@+id/SegnapostiMappa"
-        android:layout_marginTop="20sp"/>
+        android:layout_marginTop="20sp"
+        android:text="@string/ripercorri"
+        android:id="@+id/Ripercorri"/>
+    
 
 </LinearLayout>

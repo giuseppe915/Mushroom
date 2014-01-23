@@ -13,4 +13,10 @@
 	<string name="quiz">Quiz</string>
 	<string name="ricette">Recipe</string>
 	<string name="nuova_ricetta">Nuova ricetta</string>
+	<string name="elenco_segnaposti">Elenco segnaposti</string>
+	<string name="segnaposti_mappa">Segnaposti su mappa</string>
+	<string name="trace">Trace</string>
+	<string name="nuovo">Nuovo percorso</string>
+	<string name="ripercorri">Ripercorri percorso</string>
+	<string name="mappe">Mappe</string>
 </resources>

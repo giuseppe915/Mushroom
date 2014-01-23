@@ -37,5 +37,13 @@
             android:name="ingsw.msdetector.RecipeActivity"  
             android:label="@string/recipe">
         </activity>
+        <activity 
+            android:name="ingsw.msdetector.TraceActivity"  
+            android:label="@string/trace">
+        </activity>
+        <activity 
+            android:name="ingsw.msdetector.MapsActivity"  
+            android:label="@string/mappe">
+        </activity>
     </application>
 </manifest>

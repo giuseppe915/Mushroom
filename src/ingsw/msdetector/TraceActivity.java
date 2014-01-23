@@ -10,18 +10,28 @@ import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class PlaceHolderActivity extends Activity {
-	
-	
-	
-	@Override
+public class TraceActivity extends Activity 
+{
+	Button nuovoPercorso;
 	protected void onCreate(Bundle savedInstanceState) {
+		
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.placeholder_activity);
+		setContentView(R.layout.trace_activity);
 		
-		
+		nuovoPercorso = (Button) findViewById(R.id.Nuovo);
+		nuovoPercorso.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				Intent i= new Intent(TraceActivity.this,MapsActivity.class);
+				startActivity(i);
+			}
+		});
 	}
-
+	
+	
+	
 	public boolean onCreateOptionsMenu(Menu menu)
 	{
 		
@@ -38,5 +48,4 @@ public class PlaceHolderActivity extends Activity {
 	});
 	return true;	
 	}
-	
 }

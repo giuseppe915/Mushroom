@@ -18,6 +18,7 @@ public class MainActivity extends Activity
 	ImageButton formButton;
 	ImageButton PlaceholderButton;
 	ImageButton recipeButton;
+	ImageButton traceButton;
 	
    public void onCreate(Bundle savedInstanceState)
    {
@@ -77,6 +78,19 @@ public class MainActivity extends Activity
 			}
 						
 		});
+		
+		traceButton = (ImageButton) findViewById(R.id.AndareButton);
+		   
+		traceButton.setOnClickListener(new OnClickListener() {
+
+			public void onClick(View v) {
+
+			 Intent i = new Intent(MainActivity.this,TraceActivity.class);
+			 startActivity(i);
+
+			}
+		});
+
    }	
    
  
