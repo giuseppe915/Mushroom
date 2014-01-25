@@ -2,13 +2,14 @@ package ingsw.msdetector;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MenuItem.OnMenuItemClickListener;
-
-public class MapsActivity extends Activity
+import android.support.v4.app.FragmentActivity; 
+public class MapsActivity extends FragmentActivity
 {
-  @Override
+   
   protected void onCreate(Bundle savedInstanceState) {
 	
 	  super.onCreate(savedInstanceState);

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    
     <string name="app_name">MSDetector</string>
     <string name="action_settings">Settings</string>
 	<string name="segnaposti">PlaceHolder</string>
@@ -19,4 +20,5 @@
 	<string name="nuovo">Nuovo percorso</string>
 	<string name="ripercorri">Ripercorri percorso</string>
 	<string name="mappe">Mappe</string>
+	
 </resources>
