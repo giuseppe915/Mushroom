@@ -9,6 +9,7 @@ import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
+import com.google.android.gms.maps.LocationSource.OnLocationChangedListener;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
@@ -39,8 +40,12 @@ import android.support.v4.app.FragmentActivity;
 public class MapsActivity extends Activity 
 {
   
-	
+	 private  LatLng userMark;
 	 private GoogleMap mMap;
+	 Location userLocation;
+	 LatLng currLat;
+	 LatLng currLong;
+	 
 	 
   protected void onCreate( Bundle savedInstanceState) {
 
@@ -49,12 +54,23 @@ public class MapsActivity extends Activity
 	  
 	  mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 	  mMap.setMyLocationEnabled(true);
-	  LocationManager locManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-      Criteria c = new Criteria();
+	  final LocationManager locManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+      final Criteria c = new Criteria();
       c.setAccuracy(Criteria.ACCURACY_FINE);
-      Location userLocation = locManager.getLastKnownLocation(locManager.getBestProvider(c,
+      userLocation = locManager.getLastKnownLocation(locManager.getBestProvider(c,
                       false));
+      LocationListener lListener = new LocationListener()
+      {
 
+		@Override
+		public void onLocationChanged(Location location)
+		{
+	    	  userMark = new LatLng(location.getLatitude(), location.getLongitude());
+	    	  mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userMark, 13));
+	    	  mMap.addMarker(new MarkerOptions().title("Tu").snippet("tu sei qui...forse").position(userMark));
+		}
+    	  
+      };
       //Se è null l'utente non ha il gps attivo percui gli presentiamo la schermata dove può attivarlo
       if (userLocation == null) {
               Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
@@ -63,15 +79,25 @@ public class MapsActivity extends Activity
       }
       else
       {
-          
-    	  LatLng userMark = new LatLng(userLocation.getLatitude(), userLocation.getLongitude());
+    	  
+    	  userMark = new LatLng(userLocation.getLatitude(), userLocation.getLongitude());
     	  mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userMark, 13));
-    	  mMap.addMarker(new MarkerOptions().title("Tu").snippet("tu sei qui...forse").position(userMark));
-      
+    	  mMap.addMarker(new MarkerOptions().title("Tu").snippet("tu sei qui...forse").position(userMark)); 
       }
+			     
+      
+      
   }
   
  
+  public void setPosition()
+  {
+	  userMark = new LatLng(userLocation.getLatitude(), userLocation.getLongitude());
+	  mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userMark, 13));
+	  mMap.addMarker(new MarkerOptions().title("Tu").snippet("tu sei qui...forse").position(userMark));
+  
+  }
+  
   
   
   public boolean onCreateOptionsMenu(Menu menu)
