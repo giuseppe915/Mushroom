@@ -227,7 +227,6 @@ containing a value of this type.
     }
     public static final class id {
         public static final int AndareButton=0x7f05000a;
-        public static final int Back=0x7f05000c;
         public static final int ElencoSegnaposti=0x7f05000f;
         public static final int Form=0x7f05000b;
         public static final int FormButton=0x7f050009;
@@ -235,6 +234,7 @@ containing a value of this type.
         public static final int Name=0x7f050013;
         public static final int NewRecipe=0x7f050012;
         public static final int Nuovo=0x7f050014;
+        public static final int Quiz=0x7f05000c;
         public static final int Recipe=0x7f050011;
         public static final int RecipeButtom=0x7f050007;
         public static final int Ripercorri=0x7f050015;
