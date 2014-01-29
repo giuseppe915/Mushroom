@@ -64,7 +64,6 @@ int drawable ricette 0x7f02001f
 int drawable schede 0x7f020020
 int drawable segnaposti 0x7f020021
 int id AndareButton 0x7f05000a
-int id Back 0x7f05000c
 int id ElencoSegnaposti 0x7f05000f
 int id Form 0x7f05000b
 int id FormButton 0x7f050009
@@ -72,6 +71,7 @@ int id LoginButton 0x7f050006
 int id Name 0x7f050013
 int id NewRecipe 0x7f050012
 int id Nuovo 0x7f050014
+int id Quiz 0x7f05000c
 int id Recipe 0x7f050011
 int id RecipeButtom 0x7f050007
 int id Ripercorri 0x7f050015
