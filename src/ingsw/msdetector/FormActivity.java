@@ -1,6 +1,7 @@
 package ingsw.msdetector;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,7 +12,7 @@ import android.widget.Button;
 
 public class FormActivity extends Activity 
 {
-		
+		Button schede;
 		
 		protected void onCreate(Bundle savedInstanceState)
 		{	
@@ -19,7 +20,17 @@ public class FormActivity extends Activity
 			
 			setContentView(R.layout.form_activity);
 			
+			schede = (Button) findViewById(R.id.Form);
 			
+			schede.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					Intent in = new Intent(FormActivity.this,ListaFunghi.class);
+					startActivity(in);
+					
+				}
+			});
 		}
 		
 		public boolean onCreateOptionsMenu(Menu menu)

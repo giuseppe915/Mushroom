@@ -227,21 +227,23 @@ containing a value of this type.
     }
     public static final class id {
         public static final int AndareButton=0x7f05000a;
-        public static final int ElencoSegnaposti=0x7f05000e;
+        public static final int Back=0x7f05000c;
+        public static final int ElencoSegnaposti=0x7f05000f;
         public static final int Form=0x7f05000b;
         public static final int FormButton=0x7f050009;
         public static final int LoginButton=0x7f050006;
-        public static final int NewRecipe=0x7f050011;
-        public static final int Nuovo=0x7f050012;
-        public static final int Quiz=0x7f05000c;
-        public static final int Recipe=0x7f050010;
+        public static final int Name=0x7f050013;
+        public static final int NewRecipe=0x7f050012;
+        public static final int Nuovo=0x7f050014;
+        public static final int Recipe=0x7f050011;
         public static final int RecipeButtom=0x7f050007;
-        public static final int Ripercorri=0x7f050013;
+        public static final int Ripercorri=0x7f050015;
         public static final int SegnapostiButton=0x7f050008;
-        public static final int SegnapostiMappa=0x7f05000f;
-        public static final int action_settings=0x7f050014;
+        public static final int SegnapostiMappa=0x7f050010;
+        public static final int action_settings=0x7f050016;
         public static final int hybrid=0x7f050004;
-        public static final int map=0x7f05000d;
+        public static final int lista=0x7f05000d;
+        public static final int map=0x7f05000e;
         public static final int none=0x7f050000;
         public static final int normal=0x7f050001;
         public static final int root=0x7f050005;
@@ -254,11 +256,13 @@ containing a value of this type.
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int form_activity=0x7f030001;
-        public static final int login_activity=0x7f030002;
-        public static final int maps_activity=0x7f030003;
-        public static final int placeholder_activity=0x7f030004;
-        public static final int recipe_activity=0x7f030005;
-        public static final int trace_activity=0x7f030006;
+        public static final int lista_schede_funghi=0x7f030002;
+        public static final int login_activity=0x7f030003;
+        public static final int maps_activity=0x7f030004;
+        public static final int placeholder_activity=0x7f030005;
+        public static final int recipe_activity=0x7f030006;
+        public static final int row_item=0x7f030007;
+        public static final int trace_activity=0x7f030008;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
@@ -290,6 +294,7 @@ containing a value of this type.
          */
         public static final int auth_client_using_bad_version_title=0x7f060014;
         public static final int bottone_schede1=0x7f06001e;
+        public static final int button_send=0x7f06002c;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
@@ -361,6 +366,8 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060013;
+        public static final int crea_scheda=0x7f06002e;
+        public static final int edit_message=0x7f06002d;
         public static final int elenco_segnaposti=0x7f060026;
         public static final int login=0x7f06001f;
         public static final int mappe=0x7f06002b;

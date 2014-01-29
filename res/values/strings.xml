@@ -20,5 +20,8 @@
 	<string name="nuovo">Nuovo percorso</string>
 	<string name="ripercorri">Ripercorri percorso</string>
 	<string name="mappe">Mappe</string>
+	<string name="button_send">Invio</string>
+	<string name="edit_message">edita</string>
+	<string name="crea_scheda">Crea scheda</string>
 	
 </resources>
